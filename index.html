@@ -8,36 +8,191 @@
 </head>
 <body>
 
-<header>
-    <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="research.html">Research</a>
-        <a href="cv.html">CV</a>
-    </nav>
-</header>
+<!-- ==================== TOP SECTION ==================== -->
+<div class="top-section">
 
-<main>
-    <div class="intro">
-        <div class="intro-photo">
-            <img src="images/profile.jpg" alt="Giovanni Sciacovelli">
-        </div>
-        <div class="intro-text">
-            <h1>Giovanni Sciacovelli</h1>
-            <p>
-                Welcome to my website! I am an Economist (EP) in the Research Department
-                at the <strong>International Monetary Fund</strong>. My research focuses on
-                macroeconomics. I received my PhD in Economics from
-                <strong>Northwestern University</strong> in June 2025.
-            </p>
-            <p>You can find my CV <a href="files/cv.pdf">here</a>.</p>
-            <div class="contact-info">
-                <p>&#128231; <a href="mailto:giovannisciacovelli@gmail.com">giovannisciacovelli@gmail.com</a></p>
-                <p>&#128205; 700 19th Street NW, Washington, DC</p>
-            </div>
+    <!-- LEFT: Photo + Contact + CV -->
+    <div class="sidebar">
+        <!-- NOTE: Make sure your photo file is named profile.jpg in the images/ folder.
+             If your file is .png or .jpeg, change the extension below accordingly. -->
+        <img src="images/profile.jpg" alt="Giovanni Sciacovelli">
+        <div class="sidebar-info">
+            <p><a href="mailto:giovannisciacovelli@gmail.com">giovannisciacovelli@gmail.com</a></p>
+            <p class="cv-link"><a href="files/cv.pdf">Curriculum Vitae (PDF)</a></p>
         </div>
     </div>
-</main>
 
+    <!-- RIGHT: Bio -->
+    <div class="bio">
+        <h1>Giovanni Sciacovelli</h1>
+        <p>
+            Welcome to my website! I am an Economist (EP) in the Research Department
+            at the <strong>International Monetary Fund</strong>. My research focuses on
+            macroeconomics. I received my PhD in Economics from
+            <strong>Northwestern University</strong> in June 2025.
+        </p>
+        <p class="address">700 19th Street NW, Washington, DC</p>
+    </div>
+
+</div>
+
+<!-- ==================== RESEARCH ==================== -->
+<section class="research">
+
+    <h2>Working Papers</h2>
+
+    <div class="paper">
+        <h3>Monetary Policy Transmission Through Adjustable-Rate Mortgages in the Euro Area</h3>
+        <p class="paper-status">[R&amp;R <em>AEJ: Macroeconomics</em>] &middot; Finalist, 2025 ECB Young Economist Prize</p>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                This paper studies the role of adjustable-rate mortgages (ARMs) in monetary
+                policy transmission within the Euro Area. Conventional wisdom holds that ARMs
+                are relevant per se. This study finds that the presence of liquidity-constrained
+                households strongly influences their impact. Using Euro Area survey data, I
+                document that transmission is stronger in countries that exhibit both high ARM
+                shares and sizable shares of liquidity-constrained households. To interpret this
+                finding, I develop a heterogeneous-agent model featuring: (i) heterogeneity in
+                marginal propensities to consume (MPCs), (ii) agents making both housing and
+                mortgage choices, and (iii) a fraction of households with ARMs. In the model,
+                MPCs determine the extent to which changes in mortgage payments translate into
+                changes in consumption, making ARMs an important transmission vehicle only when
+                paired with high MPCs. These results highlight that accounting for household
+                heterogeneity in MPCs is essential to assess the strength of transmission
+                through ARMs.
+            </p>
+        </details>
+    </div>
+
+    <div class="paper">
+        <h3>A Monetary Policy Framework for Developing Countries</h3>
+        <p class="paper-meta">with J. Passadore, F. Unsal, and C. van Hombeeck</p>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                We present an Open Economy HANK model tailored to capture key characteristics
+                of Low-Income Countries (LICs): (i) poor households with no access to markets
+                (hand-to-mouth) and (ii) a subsistence level of consumption for tradable goods.
+                With the model calibrated for a representative LIC, and motivated by recent
+                macroeconomic developments, we illustrate our framework investigating the
+                consequences of a shock to external prices. We analyze its effects on
+                macroeconomic variables, inequality and poverty. The shock triggers a
+                consumption-led recession, an increase in inflation and a drop in real wages.
+                Consumption inequality increases: poor households can&rsquo;t insure against the
+                shock, while richer households exploit their wealth to shield their consumption.
+                Households at the bottom and at the top of the income distribution are the most
+                negatively affected by the shock: the former suffer from lower wages and
+                consumption; the latter from negative revaluations of their assets. Monetary
+                policy has limited ability to improve the welfare of poorer households due to
+                its offsetting effects on real wages and labor demand, a finding consistent
+                across the alternative monetary policy specifications analyzed. In contrast,
+                fiscal transfers are shown to be effective in cushioning the welfare losses
+                among poorer households.
+            </p>
+        </details>
+    </div>
+
+    <div class="paper">
+        <h3>Financial Flows in the Latin Monetary Union: A Machine Learning Approach</h3>
+        <p class="paper-meta">with T. Pellet</p>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Machine learning models can extract information in a systemic, comprehensive,
+                and replicable way, creating synthetic proxies for a wide range of variables
+                that cannot be measured otherwise. In this paper, we emphasize that a lot more
+                information and correlation patterns can be extracted from existing historical
+                data using these models. To illustrate our methodology, we study the effects
+                that the Latin Monetary Union had on financial flows among its members in the
+                19th century, a natural question that has not been addressed because of the lack
+                of data for financial flows during that period. Relying on machine learning
+                techniques, we are able to circumvent these data limitations by reconstructing a
+                proxy for financial flows across 14 countries between 1861 and 1913. Making use
+                of our proxy, we use standard causal inference methods and find that bilateral
+                financial flows increased by 5% between 1865 and 1913 among members of the LMU,
+                and by approximately 15% between 1865&ndash;1885, the period during which the
+                Union was most active. Overall, these results provide new insights about the
+                history of the LMU, showing that it did help member countries achieve part of
+                the goals that had pushed them to join the Union in the first place.
+            </p>
+        </details>
+    </div>
+
+    <h2>Work in Progress</h2>
+
+    <div class="paper">
+        <h3>Fixed or Adjustable Mortgage? Endogenous Rate Choice in a Model with Idiosyncratic Uncertainty</h3>
+        <details>
+            <summary>Summary</summary>
+            <p>
+                The variation in the prevalence of adjustable-rate mortgages (ARMs) across
+                countries is striking: in the Euro Area, over 90% of mortgages in Portugal
+                are ARMs, compared to only about 10% in France. This share also fluctuates
+                significantly over time: in the US, more than 30% of new mortgages had
+                adjustable rates in the 1990s, while today the fraction is less than 10%.
+                What drives these patterns? To address this question, this paper develops a
+                model with heterogeneous agents in which the choice between fixed and
+                adjustable mortgage rates is endogenous, allowing for a clearer understanding
+                of the household characteristics that, absent additional economic frictions,
+                would make ARMs an optimal choice.
+            </p>
+        </details>
+    </div>
+
+    <div class="paper">
+        <h3>Germany&rsquo;s Current Account Boom: The Impact of Housing Policies on Asset Demand and Household Investment</h3>
+        <details>
+            <summary>Summary</summary>
+            <p>
+                This paper explores the impact of housing policies on the dynamics of the
+                German current account. Since the early 2000s, the German economy has
+                experienced a remarkable expansion of its current account, marked by both a
+                decline in national investment and a surge in national savings. Notably, a
+                substantial portion of this investment reduction stems from the household
+                sector, whose primary form of investment is in housing. Several significant
+                housing policies were introduced by the German government in the late 1990s
+                and early 2000s: (i) the 1997 German Tax Act raised the real estate transfer
+                tax rate from 2% to 3.5%; (ii) the 2001 Tenancy Reform Act strengthened renter
+                protections; and (iii) the 2001 Social Housing Reform abolished a longstanding
+                housing construction subsidy in place since 1950. This paper builds an
+                open-economy HANK model to investigate the extent to which these housing
+                policies contributed to the German current account expansion.
+            </p>
+        </details>
+    </div>
+
+    <h2>Older Work</h2>
+
+    <div class="paper">
+        <h3>Excess Savings and Inflation Dynamics After the Covid-19 Pandemic</h3>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                One of the most important legacies of the Covid-19 pandemic is a massive
+                increase in private assets, the so-called excess savings. Starting from this
+                empirical observation, this paper studies the implications of excess savings
+                for US inflation over the medium run. Relying on a calibrated HANK model,
+                this paper finds that the expected drawdown of aggregate assets that follows
+                the re-opening of the US economy will result in mild, albeit prolonged,
+                inflationary pressures. The reason lies in the distribution of excess savings
+                across households. The fiscal stimulus put in place by the US government has
+                particularly benefited the accumulation of savings by low-income agents. As
+                the economy re-opens, these households quickly decrease their assets due to
+                their high MPCs, contributing to a timely recovery of consumption and inflation
+                after their initial drop. Afterwards, the bulk of savings is left in the hands
+                of higher-income households, who drawdown their assets smoothly over time,
+                leading to contained inflationary pressures. Nonetheless, the paper shows that
+                alternative fiscal policies may lead to different results: the longer the
+                government decides to keep its increased debt levels unchanged, the larger the
+                inflationary pressures out of excess savings.
+            </p>
+        </details>
+    </div>
+
+</section>
+
+<!-- ==================== FOOTER ==================== -->
 <footer>
     <p class="disclaimer">
         <em>Disclaimer: The views expressed here are personal and should not be attributed
