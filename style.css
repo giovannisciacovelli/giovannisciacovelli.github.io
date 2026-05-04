@@ -1,169 +1,172 @@
-/* ========== RESET & BASE ========== */
+/* ========== RESET ========== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
-    font-family: Georgia, "Times New Roman", Palatino, serif;
-    font-size: 16px;
-    line-height: 1.65;
-    color: #222;
-    background-color: #fff;
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 30px 40px;
-}
-
-/* ========== TOP SECTION (Photo+Contact LEFT | Bio RIGHT) ========== */
-.top-section {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ddd;
-}
-
-/* --- Left sidebar: photo + contact --- */
-.sidebar {
-    flex-shrink: 0;
-    width: 200px;
-    text-align: center;
-}
-
-.sidebar img {
-    width: 200px;
-    border-radius: 4px;
-    margin-bottom: 14px;
-}
-
-.sidebar-info {
-    text-align: center;
-    font-size: 14px;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
     line-height: 1.6;
+    color: #333;
+    background-color: #fff;
 }
 
-.sidebar-info a {
-    color: #1a0dab;
+/* ========== LEFT SIDEBAR ========== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #fafafa;
+    border-right: 1px solid #eee;
+    padding: 40px 28px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.sidebar-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.sidebar-bio {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.sidebar-links {
+    margin-bottom: 18px;
+}
+
+.sidebar-links p {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.sidebar-links a {
+    color: #0366d6;
     text-decoration: none;
 }
 
-.sidebar-info a:hover {
+.sidebar-links a:hover {
     text-decoration: underline;
 }
 
-.sidebar-info .cv-link {
-    margin-top: 6px;
+.sidebar-address {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.5;
 }
 
-/* --- Right: bio --- */
-.bio {
-    flex: 1;
+/* ========== MAIN CONTENT ========== */
+.content {
+    margin-left: 280px;
+    padding: 40px 50px;
+    max-width: 780px;
 }
 
-.bio h1 {
-    font-size: 26px;
-    color: #111;
-    margin-bottom: 14px;
-    font-weight: normal;
-}
-
-.bio p {
-    margin-bottom: 10px;
-}
-
-.bio .address {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-}
-
-/* ========== RESEARCH SECTION ========== */
-.research {
-    margin-top: 10px;
+/* ========== SECTIONS ========== */
+section {
+    margin-bottom: 36px;
 }
 
 h2 {
     font-size: 20px;
+    font-weight: 600;
     color: #111;
-    margin-top: 30px;
-    margin-bottom: 14px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 4px;
-    font-weight: normal;
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #eee;
+}
+
+section > p {
+    margin-bottom: 12px;
 }
 
 /* ========== PAPER CARDS ========== */
 .paper {
-    margin-bottom: 22px;
-    padding-left: 12px;
-    border-left: 2px solid #ccc;
+    margin-bottom: 24px;
 }
 
-.paper h3 {
-    font-size: 16px;
-    color: #111;
-    margin-bottom: 4px;
-    font-weight: bold;
-}
-
-.paper-meta {
+.paper-title {
     font-size: 15px;
-    color: #555;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 3px;
+}
+
+.paper-coauthors {
+    font-size: 14px;
+    color: #666;
     font-style: italic;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .paper-status {
-    font-size: 14px;
+    font-size: 13px;
     color: #b8860b;
-    font-weight: bold;
-    margin-bottom: 4px;
-}
-
-.paper-links {
-    font-size: 14px;
-    margin-bottom: 4px;
-}
-
-.paper-links a {
-    color: #1a0dab;
+    font-weight: 600;
+    margin-bottom: 3px;
 }
 
 details {
-    margin-top: 6px;
+    margin-top: 5px;
 }
 
 summary {
     cursor: pointer;
-    color: #1a0dab;
-    font-size: 14px;
+    color: #0366d6;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+summary:hover {
+    text-decoration: underline;
 }
 
 details p {
     margin-top: 6px;
-    font-size: 14px;
-    color: #333;
+    font-size: 13px;
+    color: #444;
     text-align: justify;
+    line-height: 1.6;
 }
 
 /* ========== FOOTER ========== */
 footer {
     margin-top: 50px;
     padding-top: 16px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #eee;
 }
 
 .disclaimer {
-    font-size: 13px;
-    color: #888;
+    font-size: 12px;
+    color: #999;
 }
 
 /* ========== LINKS ========== */
 a {
-    color: #1a0dab;
+    color: #0366d6;
+    text-decoration: none;
 }
 
 a:hover {
@@ -171,19 +174,17 @@ a:hover {
 }
 
 /* ========== RESPONSIVE ========== */
-@media (max-width: 700px) {
-    .top-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+@media (max-width: 768px) {
     .sidebar {
-        width: 180px;
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 30px 20px;
     }
-    .sidebar img {
-        width: 180px;
-    }
-    body {
-        padding: 20px;
+    .content {
+        margin-left: 0;
+        padding: 30px 20px;
     }
 }
