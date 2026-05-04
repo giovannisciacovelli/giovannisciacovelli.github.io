@@ -1,0 +1,237 @@
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fdfdfd;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+/* ========== NAVIGATION ========== */
+header {
+    border-bottom: 2px solid #003366;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #003366;
+    padding-bottom: 4px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #0066cc;
+}
+
+nav a.active {
+    border-bottom: 2px solid #003366;
+}
+
+/* ========== HOMEPAGE INTRO ========== */
+.intro {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 16px;
+}
+
+.intro-text p {
+    margin-bottom: 12px;
+}
+
+.intro-photo {
+    flex-shrink: 0;
+}
+
+.intro-photo img {
+    width: 220px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.contact-info {
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 4px;
+}
+
+.links {
+    margin-top: 12px;
+    display: flex;
+    gap: 16px;
+}
+
+.links a {
+    font-size: 14px;
+    color: #003366;
+    text-decoration: none;
+    border: 1px solid #003366;
+    padding: 4px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.links a:hover {
+    background: #003366;
+    color: #fff;
+}
+
+/* ========== HEADINGS ========== */
+h1 {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #003366;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
+
+/* ========== PAPER CARDS ========== */
+.paper {
+    margin-bottom: 28px;
+    padding: 16px 20px;
+    background: #f8f9fb;
+    border-left: 3px solid #003366;
+    border-radius: 4px;
+}
+
+.paper h3 {
+    font-size: 17px;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.paper-meta {
+    font-size: 15px;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.paper-status {
+    font-size: 14px;
+    color: #b8860b;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.paper-links {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.paper-links a {
+    color: #003366;
+    font-weight: 600;
+}
+
+details {
+    margin-top: 8px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #003366;
+    font-size: 15px;
+}
+
+details p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #444;
+    text-align: justify;
+}
+
+/* ========== CV PAGE ========== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #0055aa;
+}
+
+.cv-embed {
+    margin-top: 30px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.disclaimer {
+    font-size: 13px;
+    color: #888;
+    font-style: italic;
+}
+
+/* ========== LINKS ========== */
+a {
+    color: #003366;
+}
+
+a:hover {
+    color: #0066cc;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 700px) {
+    .intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .intro-photo img {
+        width: 180px;
+    }
+    body {
+        padding: 20px;
+    }
+}
