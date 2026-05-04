@@ -71,17 +71,10 @@ body {
     text-decoration: underline;
 }
 
-.sidebar-address {
-    font-size: 13px;
-    color: #777;
-    line-height: 1.5;
-}
-
 /* ========== MAIN CONTENT ========== */
 .content {
     margin-left: 280px;
     padding: 40px 50px;
-    max-width: 780px;
 }
 
 /* ========== SECTIONS ========== */
@@ -112,6 +105,16 @@ section > p {
     font-weight: 700;
     color: #111;
     margin-bottom: 3px;
+}
+
+.paper-title a {
+    color: #111;
+    text-decoration: none;
+}
+
+.paper-title a:hover {
+    color: #0366d6;
+    text-decoration: underline;
 }
 
 .paper-coauthors {
