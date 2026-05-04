@@ -16,78 +16,73 @@ body {
     padding: 30px 40px;
 }
 
-/* ========== NAVIGATION ========== */
-header {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-nav {
-    display: flex;
-    gap: 24px;
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 15px;
-    color: #1a0dab;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-nav a.active {
-    font-weight: bold;
-}
-
-/* ========== HOMEPAGE INTRO ========== */
-.intro {
+/* ========== TOP SECTION (Photo+Contact LEFT | Bio RIGHT) ========== */
+.top-section {
     display: flex;
     gap: 30px;
     align-items: flex-start;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
 }
 
-.intro-photo {
+/* --- Left sidebar: photo + contact --- */
+.sidebar {
     flex-shrink: 0;
+    width: 200px;
+    text-align: center;
 }
 
-.intro-photo img {
+.sidebar img {
     width: 200px;
     border-radius: 4px;
+    margin-bottom: 14px;
 }
 
-.intro-text {
+.sidebar-info {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.sidebar-info a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.sidebar-info a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-info .cv-link {
+    margin-top: 6px;
+}
+
+/* --- Right: bio --- */
+.bio {
     flex: 1;
 }
 
-.intro-text h1 {
+.bio h1 {
     font-size: 26px;
     color: #111;
     margin-bottom: 14px;
     font-weight: normal;
 }
 
-.intro-text p {
+.bio p {
     margin-bottom: 10px;
 }
 
-.contact-info {
-    margin-top: 14px;
-    font-size: 15px;
+.bio .address {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
 }
 
-.contact-info p {
-    margin-bottom: 4px;
-}
-
-/* ========== HEADINGS ========== */
-h1 {
-    font-size: 24px;
-    color: #111;
-    margin-bottom: 20px;
-    font-weight: normal;
+/* ========== RESEARCH SECTION ========== */
+.research {
+    margin-top: 10px;
 }
 
 h2 {
@@ -154,11 +149,6 @@ details p {
     text-align: justify;
 }
 
-/* ========== CV PAGE ========== */
-.cv-embed {
-    margin-top: 20px;
-}
-
 /* ========== FOOTER ========== */
 footer {
     margin-top: 50px;
@@ -182,12 +172,15 @@ a:hover {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 700px) {
-    .intro {
+    .top-section {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .intro-photo img {
+    .sidebar {
+        width: 180px;
+    }
+    .sidebar img {
         width: 180px;
     }
     body {
