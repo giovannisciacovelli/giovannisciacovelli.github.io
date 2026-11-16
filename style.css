@@ -175,6 +175,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+paper-link { font-size: 0.85em; margin-left: 0.4em; }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
